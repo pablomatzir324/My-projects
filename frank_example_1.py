@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Hl3AVolvKA5NNJGe5S7WhgntSu2e1c4k
 """
 
-!pip install frank
+#!pip install frank
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,9 +15,6 @@ from frank.io import load_uvtable, save_fit
 from frank.radial_fitters import FrankFitter
 from frank.geometry import FitGeometryGaussian
 from frank.make_figs import make_quick_fig
-
-from google.colab import drive
-drive.mount("/content/drive")
 
 uvtable_filename = "/content/drive/MyDrive/Disco 1/J16120_Band7_keepflagsFalse.txt"
 u, v, vis, weights = load_uvtable(uvtable_filename)
